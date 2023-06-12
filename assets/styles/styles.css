@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Manrope ExtraBold";
+  src: url("../fonts/Manrope-ExtraBold.ttf");
+  font-weight: 800;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Manrope ExtraBold";
+}
+
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max(350px, 100vw);
+  height: max(450px, 100vh);
+  background-color: hsl(218, 23%, 16%);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 550px;
+  height: 340px;
+  padding: 50px 30px 70px 30px;
+  border-radius: 15px;
+  background-color: hsl(217, 19%, 24%);
+}
+.main__identifier {
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  color: hsl(150, 100%, 66%);
+}
+.main__advice {
+  margin-top: -20px;
+  font-size: 1.7rem;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+}
+.main__play {
+  width: 100%;
+}
+.main__button {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  background-image: url("../images/icon-dice.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.main__button:hover {
+  box-shadow: 0px 0px 30px 2px hsl(150, 100%, 66%);
+}
+
+@media (max-width: 570px) {
+  .main {
+    width: 330px;
+    height: 320px;
+    padding: 40px 20px 60px 20px;
+    border-radius: 10px;
+  }
+  .main__identifier {
+    font-size: 0.7rem;
+  }
+  .main__advice {
+    font-size: 1.4rem;
+  }
+}

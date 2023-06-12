@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Manrope ExtraBold";
+  src: url("../fonts/Manrope-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+$font: "Manrope ExtraBold";
+$color-lightcyan: hsl(193, 38%, 86%);
+$color-neongreen: hsl(150, 100%, 66%);
+$color-grayishblue: hsl(217, 19%, 38%);
+$color-darkgrayishblue: hsl(217, 19%, 24%);
+$color-darkblue: hsl(218, 23%, 16%);
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  box-sizing: border-box;
+  font-family: $font;
+}
+
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max(350px, 100vw);
+  height: max(450px, 100vh);
+  background-color: $color-darkblue;
+}
